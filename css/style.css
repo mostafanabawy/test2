@@ -1,0 +1,33 @@
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1 {
+    color: #17a2b8;
+}
+.logCard{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 60%;
+}
+.logCard button{
+    opacity: 0.8 !important;
+}
+.logCard button:hover{
+    opacity: 1 !important;
+    color: white !important;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+input::placeholder {
+    color: gray!important;
+    opacity: 1;
+}
