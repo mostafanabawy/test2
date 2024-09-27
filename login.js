@@ -18,7 +18,7 @@ signinBtn.addEventListener('click', function () {
         if (usersList[i].email === emailInput.value && usersList[i].password === passwordInput.value) {
             localStorage.setItem("currentUser", JSON.stringify(usersList[i]));
             localStorage.setItem("isLogged", "true")
-            window.open("./home.html", "_self")
+            window.open("https://mostafanabawy.github.io/test2/home.html", "_self")
             validLogin = true;
             break;
         }

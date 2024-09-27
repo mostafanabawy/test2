@@ -1,7 +1,6 @@
 //redirect if not logged in
 if (!JSON.parse(localStorage.getItem("isLogged"))) {
-    window.open("./index.html", "_self");
-    console.log(!Boolean(localStorage.getItem("isLogged")) == true);
+    window.open("https://mostafanabawy.github.io/test2/index.html", "_self");
 }
 var logBtn = document.getElementById("logout");
 var user = JSON.parse(localStorage.getItem("currentUser"));
@@ -15,6 +14,6 @@ welcomeMessageContainer.append(welcomeMessage);
 logBtn.addEventListener("click", function () {
     localStorage.setItem("isLogged", "false");
     localStorage.removeItem("currentUser");
-    window.open("./index.html", "_self");
+    window.open("https://mostafanabawy.github.io/test2/index.html", "_self");
  
 });
