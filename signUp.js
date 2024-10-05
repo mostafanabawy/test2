@@ -26,7 +26,7 @@ signupBtn.addEventListener("click", function(){
         password: userPassword.value
     };
     // check if any inputs missing
-    if (isNewUser(user) && userName.value != "" && userPassword.value != "") {
+    if (isNewUser(user) && userName.value != "" && userPassword.value != "" && validateMail(user.email)) {
         usersList.push(user);
         saveData(usersList);
         resetAllInputs();
@@ -61,4 +61,8 @@ function resetAllInputs(){
     userName.value = "";
     userEmail.value = "";
     userPassword.value = "";
+}
+function validateMail(mail) {
+    var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    return regex.test(mail);
 }
